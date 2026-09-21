@@ -13,7 +13,7 @@
       "thumbnail": "https://i.ytimg.com/vi/jAK6iInOJik/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA_VP2d9A05UHzSm6ig2NfaVFmiyw",
       "duration": "7:27",
       "game": "ReStory: Chill Electronics Repairs",
-      "theme": "Paradoxo do Navio de Teseu"
+      "thinker": "Plutarco"
     },
     {
       "id": "Y8vri00JL_U",
@@ -61,7 +61,8 @@
       "thumbnail": "https://i.ytimg.com/vi/OyTvVs9fxTo/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDaU0PFzJqMw3b1UPRaOqXjm45Huw",
       "duration": "9:16",
       "game": "Dante’s Inferno",
-      "thinker": "Dante Alighieri"
+      "thinker": "Dante Alighieri",
+      "referenceLabel": "Poeta"
     },
     {
       "id": "pU4DwuoPB-Y",
