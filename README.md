@@ -4,9 +4,9 @@ Site em português com Home, Vídeos, Downloads, Sobre e Contato. HTML estático
 
 ## Conteúdo
 
-Edite `dist/content.json` e execute `node complete-pages.mjs` para atualizar as cinco páginas. Redes e e-mail oficiais já estão cadastrados. O início do projeto é 6 de junho de 2026.
+Para adicionar vídeos, siga [ADICIONAR-VIDEO.md](ADICIONAR-VIDEO.md). Edite somente a lista `videos` em `dist/content.json`: o JavaScript atualiza cartões, números, total e destaque da Home automaticamente. Não edite os cartões nos arquivos HTML.
 
-Vídeos: `{"id":"ID_DO_YOUTUBE","title":"Título do vídeo","thumbnail":"https://endereco-da-miniatura","duration":"5:00"}`. O ID precisa ser o identificador de 11 caracteres do YouTube. O catálogo inicial contém 15 vídeos consultados na página pública do canal em 13/09/2026. As atualizações são manuais; o site não depende de uma API do YouTube para abrir.
+Vídeo mínimo: `{"url":"https://www.youtube.com/watch?v=ID_DO_VIDEO","title":"Título do vídeo"}`. Miniatura e numeração são automáticas. Jogo, pensador, tema e duração são opcionais. Adicione no início para destacar na Home. O cadastro é manual em um único lugar; não há importação automática do canal.
 
 Downloads: `{"title":"Nome do jogo — PT-BR","description":"Versão, compatibilidade e instruções de instalação","url":"https://endereco-do-patch.zip"}`. Disponibilize os patches de tradução, com instruções e versão compatível.
 
@@ -16,10 +16,12 @@ Execute `node preview.mjs` e abra http://127.0.0.1:4173.
 
 ## Publicação
 
-A pasta pública é `dist`, sem etapa de compilação. Ela pode ser hospedada no Cloudflare Pages. O domínio pretendido é `grscronicas.com`; seu DNS ainda não foi alterado.
+A pasta pública é `dist`. A Cloudflare Pages publica a branch `master` com o comando `node complete-pages.mjs` e diretório de saída `dist`. O gerador mantém uma versão HTML para funcionar mesmo sem JavaScript; o navegador atualiza os vídeos a partir de `content.json`. Site: https://grscronicas.com.
 
 ## Pendências de conteúdo
 
 - Adicionar arquivos de tradução.
 - Repositório: https://github.com/ramos1gabriel/grscronicas
-- Conectar o domínio grscronicas.com.
+## Verificação
+
+Execute `node --test tests/video-catalog.test.mjs` e `node complete-pages.mjs`.
