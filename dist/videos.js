@@ -16,8 +16,14 @@ async function updateCatalog() {
     if (featured) featured.innerHTML = renderFeatured(videos[0]);
     if (count) count.textContent = catalogCount(videos);
   } catch (error) {
-    // Keep the working HTML fallback if the request or the catalog fails.
-    console.warn('Não foi possível atualizar o catálogo; exibindo a versão publicada.', error);
+    const message = '<p>Não foi possível carregar as crônicas. Recarregue a página ou <a href="https://www.youtube.com/@grscronicas/videos">visite o canal no YouTube</a>.</p>';
+    for (const selector of ['[data-video-grid]', '[data-latest-videos]', '[data-featured-video]']) {
+      const element = document.querySelector(selector);
+      if (element) element.innerHTML = message;
+    }
+    const count = document.querySelector('[data-video-count]');
+    if (count) count.textContent = 'ARQUIVO DE CRÔNICAS';
+    console.warn('Não foi possível carregar o catálogo.', error);
   }
 }
 

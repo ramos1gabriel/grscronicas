@@ -27,6 +27,9 @@
             <h1>Histórias sem<br><em>barreira de idioma.</em></h1>
             <p>Traduções de jogos feita pelo GRS Crônicas.</p>
         </section>
+        <section class="downloads" data-download-list aria-live="polite"><p>Carregando traduções…</p></section>
+        <!-- Mensagem editável exibida quando não há traduções cadastradas. -->
+        <template id="downloads-empty">
         <section class="empty-download"><span class="file-symbol" aria-hidden="true">PT<br>BR</span>
             <div>
                 <p class="eyebrow">EM PREPARAÇÃO</p>
@@ -37,6 +40,8 @@
                     projeto no YouTube ↗</a>
             </div>
         </section>
+        </template>
+        <noscript><p>Ative o JavaScript para consultar as traduções disponíveis.</p></noscript>
     </main>
     <footer><a class="footer-brand" href="/">GRS CRÔNICAS<span>Jogos, história e filosofia.</span></a>
         <div><a href="https://www.youtube.com/@grscronicas" target="_blank" rel="noopener noreferrer">YouTube ↗</a><a
@@ -46,6 +51,7 @@
                 href="https://twitch.tv/grscronicas" target="_blank" rel="noopener noreferrer">Twitch ↗</a></div><a
             href="mailto:grscronicas@gmail.com">grscronicas@gmail.com</a>
     </footer>
+    <script type="module" src="/downloads.js"></script>
 </body>
 
 </html>

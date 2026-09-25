@@ -46,4 +46,4 @@ Somente título e link/ID são obrigatórios. Campos ausentes não aparecem vazi
 
 ## Verificar localmente
 
-Execute `node complete-pages.mjs` e `node preview.mjs`, depois abra http://127.0.0.1:4173. O gerador valida links, títulos e IDs repetidos antes de escrever as páginas. No navegador, se a consulta ao catálogo falhar, a última versão do HTML continua disponível.
+Execute `node complete-pages.mjs` para validar o catálogo e `node preview.mjs` para abrir http://127.0.0.1:4173. Nenhum HTML é reescrito. Se o catálogo não carregar, o site mostra um aviso com link para o canal.

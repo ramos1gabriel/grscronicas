@@ -32,13 +32,13 @@ test('links válidos, duplicados e campos opcionais',()=>{
   assert.equal(catalogCount([]),'0 VIDEOENSAIOS NO ARQUIVO');
 });
 
-test('navegador lê o catálogo e preserva HTML em falha de rede',async()=>{
+test('navegador lê o catálogo e mostra aviso em falha de rede',async()=>{
   const source=(await readFile(new URL('../dist/videos.js',import.meta.url),'utf8')).replace(/^import .*;\n/,'').replace('updateCatalog();','globalThis.done = updateCatalog();');
   for(const fail of [false,true]){
     const nodes=Object.fromEntries(['data-video-grid','data-latest-videos','data-featured-video','data-video-count'].map(key=>[`[${key}]`,{innerHTML:'fallback',textContent:'fallback'}]));
     const context=vm.createContext({normalizeVideos,renderFeatured,renderGrid,catalogCount,console:{warn(){}},document:{querySelector:key=>nodes[key]},fetch:async()=>{if(fail)throw Error('offline');return {ok:true,json:async()=>({videos:[added,...data.videos]})};}});
     vm.runInContext(source,context);await context.done;
-    if(fail)assert.equal(nodes['[data-video-grid]'].innerHTML,'fallback');
+    if(fail)assert.match(nodes['[data-video-grid]'].innerHTML,/Não foi possível carregar/);
     else{
       assert.match(nodes['[data-featured-video]'].innerHTML,/abcdefghijk/);
       assert.equal(nodes['[data-video-count]'].textContent,`${data.videos.length+1} VIDEOENSAIOS NO ARQUIVO`);
