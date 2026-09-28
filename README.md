@@ -15,7 +15,7 @@ Site estático em português: Home, Vídeos, Downloads, Sobre e Contato.
 | Cadastro de vídeos e traduções | `dist/content.json` |
 | Arquivos ZIP | `dist/downloads/` |
 
-**Os HTMLs são definitivos e podem ser editados diretamente. Nenhum comando de publicação os reescreve.** Cabeçalho e rodapé estão em cada HTML; para mudar um link em todo o site, atualize as cinco páginas.
+**Os HTMLs são definitivos e podem ser editados diretamente. Nenhum comando de publicação os reescreve.** Cabeçalho e rodapé são compartilhados: edite `dist/partials/header.html` ou `dist/partials/footer.html` uma única vez. As cinco páginas carregam esses arquivos por `dist/layout.js`, que também destaca o menu da página atual. Preserve `data-site-header`, `data-site-footer` e o script `/layout.js` nos HTMLs. Os arquivos compartilhados contêm apenas o conteúdo interno, sem as tags externas `<header>` e `<footer>`. Sem JavaScript ou em falha de rede, permanecem links básicos para Home e Contato.
 
 O JavaScript preenche somente os blocos marcados com `data-featured-video`, `data-latest-videos`, `data-video-grid`, `data-video-count` e `data-download-list`. Preserve esses marcadores e os scripts ao editar o HTML. A mensagem de Downloads vazio pode ser editada no `<template id="downloads-empty">`.
 

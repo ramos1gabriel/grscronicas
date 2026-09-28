@@ -6,6 +6,9 @@ import {normalizeDownloads} from './dist/download-catalog.mjs';
 const catalog = JSON.parse(await readFile(new URL('./dist/content.json', import.meta.url), 'utf8'));
 const videos = normalizeVideos(catalog.videos);
 const downloads = normalizeDownloads(catalog.downloads);
+for (const path of ['layout.js', 'partials/header.html', 'partials/footer.html']) {
+  await access(new URL(`./dist/${path}`, import.meta.url));
+}
 for (const path of ['index.html', 'videos/index.html', 'downloads/index.html', 'sobre/index.html', 'contato/index.html']) {
   await access(new URL(`./dist/${path}`, import.meta.url));
 }
