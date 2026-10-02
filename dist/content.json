@@ -8,6 +8,14 @@
   "started": "6 de junho de 2026",
   "videos": [
     {
+      "id": "ZWYTeDG_8YQ",
+      "title": "Você não pode confiar nesse jogo!",
+      "thumbnail": "https://i.ytimg.com/vi/ZWYTeDG_8YQ/hq720.jpg",
+      "duration": "7:28",
+      "game": "Doki Doki Literature Club",
+      "thinker": "René Descartes"
+    },
+    {
       "id": "RcQzW2YW3ZU",
       "title": "Persona 5 e o Gnosticismo",
       "thumbnail": "https://i.ytimg.com/vi/RcQzW2YW3ZU/hq720.jpg",
@@ -149,6 +157,6 @@
     }
   ],
   "downloads": [],
-  "avatar": "https://yt3.googleusercontent.com/tnyBf0Rqwc9ARXEKNKmB1cKmoqpZYDqgkBffjY3BObiTiHa1P68in8OvnigYa5QEIRVilWfX=s900-c-k-c0x00ffffff-no-rj",
-  "banner": "https://yt3.googleusercontent.com/inoTSdbmVBeeAu3AAp5DTYQ0XU4LOjJ6jZVsKDXJUU2JhI_abXu46wkTQo_Fe2ciQ8T72G3omg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+  "avatar": "https://yt3.googleusercontent.com/4KkWaedwIEKNEesGhqpBom2ZHiyRwHlHkLc26gEOWKKLNQSJxhxNCxFGsxAkzSp3tHE0dv7w=s160-c-k-c0x00ffffff-no-rj",
+  "banner": "https://yt3.googleusercontent.com/Rf4Yd40O-zF_qvunXxYTzDpKAToSgDQGkh28TADLl4EqtuPAHzEBycWdpcPVOAfjAZaEG6xrJ-0=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
 }
