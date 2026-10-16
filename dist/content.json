@@ -7,6 +7,14 @@
   "email": "grscronicas@gmail.com",
   "started": "6 de junho de 2026",
   "videos": [
+     {
+      "id": "jxBNqt2wPYg",
+      "title": "O amor é destino ou escolha?",
+      "thumbnail": "https://i.ytimg.com/vi/jxBNqt2wPYg/hq720.jpg",
+      "duration": "7:19",
+      "game": "True Love '95",
+      "thinker": "Aristófanes"
+    },
     {
       "id": "cYhOFt7xAmE",
       "title": "A água que guarda os mortos",
@@ -164,7 +172,15 @@
       "theme": "Espaços liminares e psicologia"
     }
   ],
-  "downloads": [],
+  "downloads": [
+    {
+      "title": "True Love '95 - Tradução PT-BR",
+      "description": "Tradução compatível com a versão v2.0 do jogo. As instruções de instalação estão no arquivo LEIAME.txt dentro do zip.",
+      "url": "/downloads/grscronicas-true-love-95-ptbr.zip",
+      "url_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1094640/header.jpg?t=1783949030",
+      "status": "CONCLUÍDA"
+    }
+  ],
   "avatar": "https://yt3.googleusercontent.com/4KkWaedwIEKNEesGhqpBom2ZHiyRwHlHkLc26gEOWKKLNQSJxhxNCxFGsxAkzSp3tHE0dv7w=s160-c-k-c0x00ffffff-no-rj",
   "banner": "https://yt3.googleusercontent.com/Rf4Yd40O-zF_qvunXxYTzDpKAToSgDQGkh28TADLl4EqtuPAHzEBycWdpcPVOAfjAZaEG6xrJ-0=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
 }
